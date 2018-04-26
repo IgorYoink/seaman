@@ -220,7 +220,7 @@ nav.catalog{
 	margin:20px auto;
 }
 
-.catalog ul{
+.catalog>ul{
 	display:flex;
 	justify-content:center;
 }
@@ -229,7 +229,7 @@ nav.catalog{
 	margin:0 10px;
 }
 
-.catalog ul li:not(:last-child):after{
+.catalog > ul > li:not(:last-child):after{
 	content: ".";
 	position: relative; 
 	top: -30%;
@@ -237,7 +237,7 @@ nav.catalog{
 	color:#ffffff;
 }
 
-.catalog ul li a{	
+.catalog >ul>li>a{	
     font-family: "lato-regular", Helvetica, Arial, sans-serif;
 	letter-spacing:4px;
 	word-spacing:6px;
@@ -245,17 +245,65 @@ nav.catalog{
 	text-transform:uppercase;
 }
 
+.catalog .submenu{
+	font-size:10px;
+	letter-spacing:1px;
+	position:absolute;
+	top:170px;
+	padding:0;
+	margin:0 auto;
+	margin-left:-70px;
+	display:block;
+	z-index:20;
+	vertical-align:top;
+}
+
+
+.catalog .submenu li{
+	float:left;
+	vertical-align:top;
+	color:#666666;
+	padding:10px;
+	width:150px;
+	height:300px;
+	margin:0;
+	background:#ffffff;
+	border-right:1px solid #eeeeee;
+}
+
+.catalog .submenu li a{
+	display:block;
+	color:#666666;
+	text-decoration:none;
+	text-transform:uppercase;
+	width:150px;
+	height:300px;
+}
+
+.catalog .submenu li a img{
+	margin-bottom:10px;
+}
+
+.catalog .submenu li a p{
+	color:#666666;
+	padding:10px;
+	font-size:11px;
+	line-height:16px;
+	letter-spacing:0;
+	text-transform:none;
+}
 
 
 
 
 
-
+.hide{display:none !important;}
 
 /*  Hero Section  */
 
 .hero{
     width: 100%;
+	padding-bottom:30px;
     height: auto;
     position: relative;
     background: url('../img/hero.jpg') no-repeat bottom center;
@@ -274,7 +322,7 @@ nav.catalog{
 	width: 100%;
     position: relative;
     top: 20%;
-    margin:-105px auto 0;
+    margin:50px 0;
     z-index: 10;
 	justify-content:center;
 }
