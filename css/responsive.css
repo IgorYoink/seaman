@@ -227,6 +227,7 @@ nav.catalog{
 
 .catalog ul li{
 	margin:0 10px;
+	padding-bottom:40px;
 }
 
 .catalog > ul > li:not(:last-child):after{
@@ -238,6 +239,7 @@ nav.catalog{
 }
 
 .catalog >ul>li>a{	
+	display:inline-block;
     font-family: "lato-regular", Helvetica, Arial, sans-serif;
 	letter-spacing:4px;
 	word-spacing:6px;
@@ -253,11 +255,14 @@ nav.catalog{
 	padding:0;
 	margin:0 auto;
 	margin-left:-70px;
-	display:block;
+	display:none;
 	z-index:20;
 	vertical-align:top;
 }
 
+.catalog>ul>li:hover .submenu{
+	display:block;
+}
 
 .catalog .submenu li{
 	float:left;
@@ -278,6 +283,7 @@ nav.catalog{
 	text-transform:uppercase;
 	width:150px;
 	height:300px;
+	overflow:hidden;
 }
 
 .catalog .submenu li a img{
@@ -294,8 +300,15 @@ nav.catalog{
 }
 
 
-
-
+.catalog .submenu li:hover{
+	position:relative;
+	box-shadow: 0 0 30px 10px rgba(0,0,0,0.1);
+	z-index:300;
+	transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -o-transition: all .1s linear;
+}
 
 .hide{display:none !important;}
 
