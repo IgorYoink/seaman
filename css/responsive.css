@@ -1077,13 +1077,22 @@ aside button[type="reset"]:before{
 
 .catalog_items .item{
 	padding:10px;
-	border-bottom:1px solid #cccccc
+	border-bottom:1px solid #cccccc;
+	vertical-align:top !important;
 }
 
-.catalog_items .item img{
+.catalog_items .item .image img{
 	width:250px;
 }
+.catalog_items .item .image, .catalog_items .right-text{
+	display:inline-block;
+	width:30%;
+	height:100%;
+}
 
+.catalog_items .right-text{
+	width:65%;
+}
 
 /*  Search Section  */
 .search{
