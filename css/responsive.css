@@ -1074,29 +1074,13 @@ aside button[type="reset"]:before{
 	position:relative;
 	width:100%;
 }
-.items{
-	margin-top:20px;
-	height:100%;
+
+.catalog_items .item{
+	padding:10px;
+	border-bottom:1px solid #cccccc
 }
 
-.items li{
-	display:block;
-	height:200px;
-	padding:0 20px;
-	border-top:1px solid #cccccc;
-}
-
-.items li div.imageSer{
-	display:block;
-	float:left;
-}
-
-.items li a{
-	display:block;
-	width:250px;
-}
-
-.items li img.mainItem{
+.catalog_items .item img{
 	width:250px;
 }
 
