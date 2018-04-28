@@ -1072,6 +1072,7 @@ aside button[type="reset"]:before{
 }
 .catalog_items{
 	position:relative;
+	padding-bottom:20px;
 	width:100%;
 }
 
@@ -1079,6 +1080,11 @@ aside button[type="reset"]:before{
 	padding:10px;
 	border-bottom:1px solid #cccccc;
 	vertical-align:top !important;
+}
+
+
+.catalog_items .item:last-child{
+	border-bottom:none;
 }
 
 .catalog_items .item h6:hover{
