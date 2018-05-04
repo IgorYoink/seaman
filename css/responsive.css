@@ -671,7 +671,7 @@ aside button[type="reset"]:before{
 	text-transform:uppercase;
 	letter-spacing:.3em;
 }
-.product_card span:empty, .catalog_card span:empty{
+.product_card >span:empty, .catalog_card >span:empty{
 	display:block;
 	margin-left:30px;
 	width:100px;
@@ -900,6 +900,7 @@ aside button[type="reset"]:before{
 
 .product_description .text .price{
 	padding:10px;
+	margin-bottom:30px;
 	font-size:24px;
 	font-weight:100;
 	color:#3891ed;
@@ -1181,7 +1182,7 @@ aside button[type="reset"]:before{
 	width:65%;
 }
 
-.catalog_items .right-text .icons{
+.catalog_items .right-text .icons, .property_details .icons{
 	display:inline-block;
 	width:40px;
 	height:40px;
