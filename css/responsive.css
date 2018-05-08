@@ -551,10 +551,45 @@ nav.catalog{
 .contacts .right{
 	margin-left:42%;
 }
-.contacts .right form{
+/*  Form Feedback  */
+
+form.feedback{
 	width:100%;
 	padding-left:20px;
 }
+
+form.feedback input, form.feedback textarea{
+	display:block;
+	width:80%;
+	padding-left:5px;
+	min-height:30px;
+	border:none;
+}
+
+
+form.feedback button{
+    display: block;
+	width:40%;
+    text-align: center;
+    padding: 10px;
+	border:none;
+	background:#3991eb;
+    color: #eeeeee;
+    text-decoration: none;
+	cursor:pointer;
+}
+
+form.feedback button:hover{
+	opacity:.7;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+	
+}
+
+
+
 /*  breadcrumbs section  */
 
 .breadcrumbs .wrapper{
@@ -752,7 +787,7 @@ aside .dropdown label input:checked ~ label{
 	color:#ffffff;
 }
 
-aside button.picup {
+button.picup {
     display: block;
     width: 80%;
     text-align: center;
@@ -761,7 +796,7 @@ aside button.picup {
 	background:none;
 }
 
-aside button.picup{
+button.picup{
     text-decoration: none;
     padding: 15px 15px;
     border: 2px solid #52627c;
@@ -778,7 +813,7 @@ aside button.picup{
     -o-transition: all .2s linear;
 }
 
-aside button.picup:hover{
+button.picup:hover{
     color: #a0c3e5;
     border: 2px solid #a0c3e5;    
 }
