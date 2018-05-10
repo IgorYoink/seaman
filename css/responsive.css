@@ -874,7 +874,7 @@ aside button[type="reset"]:before{
 	margin-left:30px;
 }
 .product_card ul li, .catalog_card>ul>li{
-	display:inline;
+	display:inline-block;
 	padding-right:30px;
 	line-height:30px;
 	white-space: nowrap;
