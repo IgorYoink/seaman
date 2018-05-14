@@ -12,7 +12,8 @@
 	<link rel="stylesheet" href="owl-carousel/css/owl.carousel.css">
 	<link rel="stylesheet" href="owl-carousel/css/owl.theme.default.css">
     <link rel="stylesheet" href="css/accordion.core.css" type="text/css" charset="utf-8">
-	
+	<link rel="stylesheet" href="css/lightbox.css" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!--script type="text/jаvascript" src="js/jquery.matchHeight.js"></script>
@@ -191,10 +192,10 @@
 					</ul>
 					<div class="product_description">
 						<div class="images">
-							<img src="images/ssl-5381/SSL-5381-Water.jpg" alt=""><br>
-							<img src="images/ssl-5381/SSL-5381-Water.jpg" alt="">
-							<img src="images/ssl-5381/ssl-5381_scheme.jpg" alt="">
-							<img src="images/ssl-5381/SSL-5381-Water-fr.jpg" alt="">
+							<a href="images/ssl-5381/SSL-5381-Water.jpg" data-lightbox="roadtrip"><img src="images/ssl-5381/SSL-5381-Water.jpg" alt=""></a>
+							<a href="images/ssl-5381/SSL-5381-Water.jpg" data-lightbox="roadtrip"><img src="images/ssl-5381/SSL-5381-Water.jpg" alt=""></a>
+							<a href="images/ssl-5381/ssl-5381_scheme.jpg" data-lightbox="roadtrip"><img src="images/ssl-5381/ssl-5381_scheme.jpg" alt=""></a>
+							<a href="images/ssl-5381/SSL-5381-Water-fr.jpg" data-lightbox="roadtrip"><img src="images/ssl-5381/SSL-5381-Water-fr.jpg" alt=""></a>
 						</div>
 						<div class="right_col">
 							<form action="" method="post">
@@ -386,6 +387,16 @@
 	<!--  end footer  -->
 
 <script type="text/javascript" src="js/jquery.accordion.2.0.js" charset="utf-8"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/elevatezoom/3.0.8/jqueryElevateZoom.js"></script>
+<script src="js/lightbox.js"></script>
+        
+<script>
+    lightbox.option({
+      'resizeDuration': 20,
+      'fadeDuration': 20,
+      'wrapAround': true
+    })
+</script>
         <script type="text/javascript">
             $('#filter').accordion({
                 canToggle: true,

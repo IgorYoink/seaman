@@ -894,11 +894,13 @@ aside button[type="reset"]:before{
 
 .product_description .images{
 	float:left;
+	width:320px;
 }
-.product_description .images img:first-child{
+
+.product_description .images a:first-child img{
 	width:250px;
 }
-.product_description .images img:not(:first-child){
+.product_description .images a:not(:first-child) img{
 	width:100px;
 }
 .product_description .text h4{
